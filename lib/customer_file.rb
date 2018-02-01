@@ -30,7 +30,7 @@ class CustomerFile
         # of customers.
         customers << parse_customer(line)
       end
-
+      
       # Return the collection
       customers
     end

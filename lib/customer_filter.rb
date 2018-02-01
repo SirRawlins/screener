@@ -48,7 +48,7 @@ class CustomerFilter
  		#
   		def customer_geo(customer)
   			# Lat followed by long.
-  			[customer[:latitude], customer[:longitude]]
+  			[customer['latitude'], customer['longitude']]
   		end
 
   end

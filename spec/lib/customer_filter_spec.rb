@@ -17,9 +17,9 @@ RSpec.describe CustomerFilter do
             # which might be parsed from the file.
             #
             # Local to Dublin.
-            let(:local_customer) { { :latitude => 53.349805, :longitude => -6.260310 } }
+            let(:local_customer) { { 'latitude' => 53.349805, 'longitude' => -6.260310 } }
             # Further afield in London.
-            let(:distant_customer) { { :latitude => 51.507351, :longitude => -0.127758 } }
+            let(:distant_customer) { { 'latitude' => 51.507351, 'longitude' => -0.127758 } }
 
             # Mock a sample with various customers.
             let(:customer_sample) { [local_customer, distant_customer] }
