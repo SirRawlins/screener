@@ -11,3 +11,6 @@ ruby File.read('.ruby-version').strip.split('-').first
 gem 'rspec'
 gem 'rspec-collection_matchers'
 gem 'rubocop', require: false
+
+# Geolocation Maths
+gem 'geocoder'
