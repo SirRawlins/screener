@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Regular gem source.
 source 'https://rubygems.org'
 
 # Define a safe version of Ruby to use.
@@ -6,3 +9,4 @@ ruby File.read('.ruby-version').strip.split('-').first
 
 # Testing & Code Analysis
 gem 'rspec'
+gem 'rubocop', require: false
