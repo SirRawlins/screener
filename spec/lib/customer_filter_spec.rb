@@ -5,9 +5,9 @@ require 'customer_filter'
 
 RSpec.describe CustomerFilter do
 
-    describe '#nearby' do
+    describe '#find_nearby' do
         # Get the result for testing.
-        subject { described_class.nearby(customer_sample, home) }
+        subject { described_class.find_nearby(customer_sample, of: home) }
 
         context 'and home is Dublin' do
             # Set home location as lat/long for Dublin.
