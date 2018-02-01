@@ -35,6 +35,23 @@ class CustomerFile
       customers
     end
 
+    #
+    # Write a collection of customers to
+    # a file in a similar format to which
+    # they arrived.
+    #
+    def write(path, customers)
+      # Open a file to be overwritten with the new
+      # customer data.
+      File.open(File.expand_path("./#{path}"), "w+") do |f|
+        # Loop over the collection of customers.
+        customers.each do |customer| 
+          # Add the JSON formatted customer to the file.
+          f.puts customer.to_json
+        end
+      end
+    end
+
     private
 
       # Convert a single JSON encoded line

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Geo maths helpers.
 require 'geocoder'
 
 class CustomerFilter
