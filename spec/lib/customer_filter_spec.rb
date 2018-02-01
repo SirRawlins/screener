@@ -5,14 +5,11 @@ require 'customer_filter'
 
 RSpec.describe CustomerFilter do
 
-    describe '#find_nearby' do
+    describe '#nearby' do
         # Get the result for testing.
-        subject { described_class.find_nearby(customer_sample, of: home) }
+        subject { described_class.nearby(customer_sample, 100, [53.339428, -6.257664]) }
 
         context 'and home is Dublin' do
-            # Set home location as lat/long for Dublin.
-            let(:home) { [53.339428, -6.257664] }
-
             # Mock some example customer hashes like those
             # which might be parsed from the file.
             #
