@@ -9,4 +9,5 @@ ruby File.read('.ruby-version').strip.split('-').first
 
 # Testing & Code Analysis
 gem 'rspec'
+gem 'rspec-collection_matchers'
 gem 'rubocop', require: false
