@@ -2,6 +2,8 @@
 
 # The invite operations.
 require 'inviter'
+# Style the task output.
+require 'colorize'
 
 namespace :customers do
     desc 'Finds customers to invite for dinner near to the Dublin office.'
@@ -22,6 +24,6 @@ namespace :customers do
 
         # Assuming the task completed
         # present a message to the user.
-        puts "Your customers invitee list is ready for you: #{args.output_path}"
+        puts "Your customers invitee list is ready for you: #{args.output_path}".colorize(:green)
     end
 end

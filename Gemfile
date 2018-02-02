@@ -12,7 +12,8 @@ gem 'rspec'
 gem 'rspec-collection_matchers'
 gem 'rubocop', require: false
 
-# Task runners.
+# Task Runners & Output.
+gem 'colorize'
 gem 'rake'
 
 # Geolocation Maths
