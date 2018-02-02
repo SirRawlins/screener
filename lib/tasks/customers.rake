@@ -1,5 +1,5 @@
 # The invite operations.
-require 'customer_invites'
+require 'inviter'
 
 namespace :customers do
 
@@ -17,7 +17,7 @@ namespace :customers do
 
         # Run the operation to export the nearby customers
         # that we want to invite.
-        CustomerInvites.prepare_from_file(args.input_path, args.output_path, args.within, args.of)
+        Inviter.prepare_from_file(args.input_path, args.output_path, args.within, args.of)
 
         # Assuming the task completed
         # present a message to the user.

@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 require 'spec_helper'
-require 'customer_invites'
+require 'inviter'
 
-RSpec.describe CustomerInvites do
+RSpec.describe Inviter do
 
 	describe "#prepare_from_file" do
 		# Mock the input file.

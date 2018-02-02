@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require 'customer_file'
+require 'customer/store'
 
-RSpec.describe CustomerFile do
+RSpec.describe Customer::Store do
 
     describe '#parse' do
         # Get the result for testing.

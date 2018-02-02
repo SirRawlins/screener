@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 require 'spec_helper'
-require 'customer_collection'
+require 'customer/collection'
 
-RSpec.describe CustomerCollection do
+RSpec.describe Customer::Collection do
 
 	describe 'Instance methods' do
 		# Initialize a collection for testing.
