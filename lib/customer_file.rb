@@ -1,5 +1,5 @@
 # Collection class for building.
-require_relative 'customer_collection'
+require 'customer_collection'
 
 #
 # Class responsible for reading/writing customer

@@ -1,6 +1,6 @@
 # Libs for loading/exporting customers.
-require_relative 'customer_collection'
-require_relative 'customer_file'
+require 'customer_collection'
+require 'customer_file'
 
 #
 # Class responsible for preparing customer invites

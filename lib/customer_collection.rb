@@ -1,6 +1,6 @@
 # Libs to help with loading/filtering.
-require_relative 'customer_file'
-require_relative 'customer_filter'
+require 'customer_file'
+require 'customer_filter'
 
 # Represents a collection of customer records
 # basically an array with a few helper methods.

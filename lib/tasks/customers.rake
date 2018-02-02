@@ -1,5 +1,5 @@
 # The invite operations.
-require_relative '../customer_invites'
+require 'customer_invites'
 
 namespace :customers do
 
