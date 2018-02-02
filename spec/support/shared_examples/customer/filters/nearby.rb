@@ -2,7 +2,7 @@
 # Shared tests for methods which filter a collection
 # of customer records based on their geo location.
 #
-RSpec.shared_examples 'customer_nearby_filter' do
+RSpec.shared_examples 'customer/filters/nearby' do
 
     # Mock some example customer hashes like those
     # which might be parsed from the file.

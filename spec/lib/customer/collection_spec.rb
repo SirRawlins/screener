@@ -12,17 +12,17 @@ RSpec.describe Customer::Collection do
             subject { super().nearby(100, [53.339428, -6.257664]) }
 
             # Ensure it filters the customers.
-            it_behaves_like 'customer_nearby_filter'
+            it_behaves_like 'customer/filters/nearby'
 		end
 	end
 
 	describe 'Class methods' do
 		describe '#from_file' do
 			# Get the method result to test.
-			subject { described_class.from_file(path) }
+			subject { described_class.from_file(input_path) }
 
 			# Generic file parser behaviour.
-			it_behaves_like 'customer_file_parser' 
+			it_behaves_like 'customer/store/parse' 
 		end
 	end
 

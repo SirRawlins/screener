@@ -5,10 +5,10 @@ RSpec.describe Customer::Store do
 
     describe '#parse' do
         # Get the result for testing.
-        subject { described_class.parse(path) }
+        subject { described_class.parse(input_path) }
 
         # Generic file parser behaviour.
-        it_behaves_like 'customer_file_parser'
+        it_behaves_like 'customer/store/parse'
     end
 
     describe '#write' do

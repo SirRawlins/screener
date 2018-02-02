@@ -19,6 +19,10 @@ RSpec.describe Inviter do
 		# Compare against the fixture data to see that
 		# the expected file was generated.
 		it { is_expected.to eq(expected_output_content) }
+
+		# Fails with parse error when bad file
+		# is supplied as input_path.
+		it_behaves_like 'customer/store/with_bad_file'
 	end
 
 end
