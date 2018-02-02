@@ -14,7 +14,7 @@ module Customer
 		        #
 		        def find(customers, within, of)
 		            # Collection of nearby customers.
-		            nearby_customers = []
+		            nearby_customers = Collection.new
 
 		            # Loop over the customer collection to
 		            # find those nearby.

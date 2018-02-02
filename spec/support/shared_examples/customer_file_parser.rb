@@ -9,7 +9,7 @@ RSpec.shared_examples 'customer_file_parser' do
 		let(:path) { '/spec/fixtures/customers.json' }
 
 		# Ensure the returned value looks good.
-		it { is_expected.to be_an(Array) }
+		it { is_expected.to be_an(Customer::Collection) }
 		it { is_expected.to have(32).items }
 	end
 
@@ -20,7 +20,7 @@ RSpec.shared_examples 'customer_file_parser' do
 		# Ensure the returned value looks good.
 		# It should skip and continue over the blank lines
 		# and parse all the data.
-		it { is_expected.to be_an(Array) }
+		it { is_expected.to be_an(Customer::Collection) }
 		it { is_expected.to have(32).items }
 	end
 
