@@ -45,15 +45,21 @@ class CustomerFile
         # they arrived.
         #
         def write(path, customers)
+            # Get absolute path for the new file,
+            absolute_path = File.expand_path("./#{path}")
+
             # Open a file to be overwritten with the new
             # customer data.
-            File.open(File.expand_path("./#{path}"), "w+") do |f|
+            File.open(absolute_path, "w+") do |f|
                 # Loop over the collection of customers.
                 customers.each do |customer| 
                     # Add the JSON formatted customer to the file.
                     f.puts serialize_customer(customer)
                 end
             end
+
+            # Return the newly generated file.
+            File.read(absolute_path)
         end
 
         private
