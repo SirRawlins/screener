@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 #
 # Shared tests for methods which filter a collection
 # of customer records based on their geo location.
 #
 RSpec.shared_examples 'customer/filters/nearby' do
-
     # Mock some example customer hashes like those
     # which might be parsed from the file.
     #
@@ -18,8 +19,7 @@ RSpec.shared_examples 'customer/filters/nearby' do
     # Expect an array in return.
     it { is_expected.to be_an(Array) }
     # Expect the result to include the appropriate
-    # customer and not the other.
+    # customer and not the other.
     it { is_expected.to include(local_customer) }
     it { is_expected.to_not include(distant_customer) }
-
 end

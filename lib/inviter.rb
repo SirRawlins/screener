@@ -1,8 +1,13 @@
+# frozen_string_literal: true
+
 # Include the customer interaction library.
 require 'customer'
 
-module Inviter
-
+#
+# Class responsible for for invitation generation from
+# given input file, based on distance and location params.
+#
+class Inviter
     #
     # Takes the customer file and prepares an export
     # of customers we should invite, within a given
@@ -18,11 +23,10 @@ module Inviter
             # To the desired file.
             output_path,
             # Sorted by their user_id.
-            invitees.sort_by { |customer| 
+            invitees.sort_by do |customer|
                 # Sort the customers for export.
-                customer['user_id'] 
-            }
+                customer['user_id']
+            end
         )
     end
-
 end
