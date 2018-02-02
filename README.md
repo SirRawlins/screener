@@ -1,5 +1,7 @@
 # Screener - Robert Rawlins
 
+[![Build Status](https://travis-ci.org/SirRawlins/screener.svg?branch=master)](https://travis-ci.org/SirRawlins/screener)
+
 > This Ruby/Rake task accepts a text file of customers (JSON Encoded), finds all those within [X]km of a given location, sorts them by their ID in ascending order and outputs them back into the same format in which they arrived.
 >
 > **By default it filters for customers within 100km of the Dublin HQ.**
