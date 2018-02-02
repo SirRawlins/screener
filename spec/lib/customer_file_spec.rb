@@ -2,7 +2,6 @@
 
 require 'spec_helper'
 require 'customer_file'
-require 'support/shared_examples/customer_file_parser'
 
 RSpec.describe CustomerFile do
 

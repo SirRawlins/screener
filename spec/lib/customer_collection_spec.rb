@@ -2,8 +2,6 @@
 
 require 'spec_helper'
 require 'customer_collection'
-require 'support/shared_examples/customer_file_parser'
-require 'support/shared_examples/customer_nearby_filter'
 
 RSpec.describe CustomerCollection do
 

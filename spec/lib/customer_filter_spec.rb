@@ -2,7 +2,6 @@
 
 require 'spec_helper'
 require 'customer_filter'
-require 'support/shared_examples/customer_nearby_filter'
 
 RSpec.describe CustomerFilter do
 
