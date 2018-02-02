@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Makes testing collection sizes easier i.e. have(x).items.
 require 'rspec/collection_matchers'
 

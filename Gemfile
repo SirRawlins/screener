@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Regular gem source.
 source 'https://rubygems.org'
 
