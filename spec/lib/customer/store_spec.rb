@@ -13,7 +13,7 @@ RSpec.describe Customer::Store do
 
     describe '#write' do
     	# Mock a temp file to hold the data.
-    	let(:output_path) { 'spec/fixtures/invitees.json' }
+    	let(:output_path) { 'spec/tmp/customer-export.json' }
 
     	# Read in the customer collection from the fixture
     	# to use in testing the write.
