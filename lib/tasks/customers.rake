@@ -22,6 +22,6 @@ namespace :customers do
 
         # Assuming the task completed
         # present a message to the user.
-        puts 'Your customers invitee list is ready for you.'
+        puts "Your customers invitee list is ready for you: #{args.output_path}"
     end
 end
